@@ -41,7 +41,3 @@ sudo apt-get -y install mysql-server
 
 echo "Overwriting the postgres conf"
 sudo sed -i 's/md5/trust/g' /etc/postgresql/*/main/pg_hba.conf
-
-cd /vagrant
-
-rake db:create db:migrate
